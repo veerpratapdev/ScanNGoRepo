@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Mobile Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ScanNGo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <!-- LEFT -->
+        <div class="left">
+            <img src="image/WhatsApp_Image_2026-04-25_at_10.51.46_AM-removebg-preview.png" class="logo">
+            <h1>ScanNGo</h1>
+            <p>Smart Shopping Experience</p>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right">
+
+            <!-- LOGIN -->
+            <div id="loginForm" class="form active">
+                <h2>Welcome Back</h2>
+
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+
+                <button onclick="login()">Login</button>
+
+                <p onclick="showSignup()" class="toggle">
+                    Create new account →
+                </p>
+            </div>
+
+            <!-- SIGNUP -->
+            <div id="signupForm" class="form">
+                <h2>Create Account</h2>
+
+                <input type="text" id="signupName" placeholder="Name" required>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+
+                <button onclick="signup()">Sign Up</button>
+
+                <p onclick="showLogin()" class="toggle">
+                    ← Back to Login
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JS LINK -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
