@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: #0f172a;
+    color: white;
+}
+
+.main {
+    display: flex;
+    height: 100%;
+}
+
+
+/* LEFT */
+
+.left {
+    flex: 1;
+    background: linear-gradient(135deg, #00c9ff, #92fe9d);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.left h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+
+/* RIGHT */
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* FORM */
+
+.form {
+    width: 320px;
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+
+/* INPUT */
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #555;
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: #00c9ff;
+}
+
+
+/* BUTTON */
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #00c9ff;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #92fe9d;
+}
+
+
+/* TOGGLE */
+
+.toggle {
+    color: #aaa;
+    cursor: pointer;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    .left {
+        height: 35%;
+    }
+    .right {
+        height: 65%;
+    }
+}
