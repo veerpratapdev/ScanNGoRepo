@@ -44,7 +44,7 @@ function login() {
     if (email === savedUser.email && password === savedUser.password) {
         alert("Login Successful!");
 
-        // 👉 Next page (future)
+        //  Next page (future)
         // window.location.href = "scanner.html";
 
     } else {
